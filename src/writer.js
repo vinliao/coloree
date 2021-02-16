@@ -1,27 +1,22 @@
 import { colors } from './colors.js';
 import jsToSass from './jsToSass.js'
 
-const keys = Object.keys(colors);
-// console.log(keys);
+let outputColor = {}
+outputColor['black'] = "#000"
+outputColor['white'] = "#fff"
 
+const keys = Object.keys(colors);
 keys.forEach(key => {
-  // console.log(key);
+
+  // white and black are hardcoded
+  if(key != 'white' && key != 'black') {
+    const lightness = Object.keys(colors[key]);
+    lightness.forEach(oneLightness => {
+      // example of colorString: red-50, blue-700, etc
+      const colorString = key + '-' + oneLightness;
+      outputColor[colorString] = colors[key][oneLightness];
+    });
+  }
 });
 
-// goal
-/*
-have an object that looks like this
-{
-  blue-100: whatever,
-  blue-200: whatever
-}
-*/
-
-let outputColor = {}
-// outputColor['black'] = "#000"
-// outputColor['white'] = "#fff"
-
-outputColor['black'] = "#000";
-
-console.log(jsToSass(outputColor));
-Deno.writeTextFileSync('./hello.scss', jsToSass(outputColor));
+Deno.writeTextFileSync('./css/style.scss', jsToSass(outputColor));

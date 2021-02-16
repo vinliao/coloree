@@ -1,2 +1,2 @@
 # asdf
-Tailwindcss colors, but as sass variables.
+Tailwindcss colors, but as sass variables (importable through cdn).
