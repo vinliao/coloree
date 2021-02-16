@@ -19,4 +19,4 @@ keys.forEach(key => {
   }
 });
 
-Deno.writeTextFileSync('./css/style.scss', jsToSass(outputColor));
+Deno.writeTextFileSync('../color.min.scss', jsToSass(outputColor));
