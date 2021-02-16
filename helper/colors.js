@@ -1,3 +1,5 @@
+// source: https://github.com/tailwindlabs/tailwindcss/blob/master/colors.js
+
 export const colors = {
   black: '#000',
   white: '#fff',

@@ -1,3 +1,5 @@
+// source: https://gist.github.com/adrienZ/0257e37bf4788b903ba76fa82dac1ed1
+
 /**
  * @name jsToSassVariables
  * @param {Object} obj
