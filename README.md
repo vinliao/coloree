@@ -12,8 +12,8 @@ This is who coloree is for—now you can use tailwindcss’ color classes as Sas
 ## How to install
 ### Using `wget`
 1. In your terminal, `cd` to your the directory where your sass files live.
-2. Run `wget https://raw.githubusercontent.com/vinliao/coloree/master/coloree.scss`
-3. Import `_coloree.scss`.
+2. Run `wget https://raw.githubusercontent.com/vinliao/coloree/master/_coloree.scss`
+3. Import `_coloree.scss` in your sass file.
 4. Start using those sweet, sweet tailwindcss colors as Sass variables
 
 ### Todo
